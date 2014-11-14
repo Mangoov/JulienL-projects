@@ -1,0 +1,326 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{67188F6B-27BE-4E93-A7EF-C512656343A1}</ProjectGuid>
+    <RootNamespace>INF2990</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">../../Exe/DLL/</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|x64'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|x64'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|x64'" />
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\Commun\Externe\FreeImage\include;$(JAVA_HOME)/include;$(JAVA_HOME)/include/win32;../../Commun/Externe/JAWT_info/include;../../Commun/Utilitaire;../../Commun/Utilitaire/Vue;../../Commun/Chargeur3ds/Chargeur3ds/Sources;Application;Arbre;Arbre/Noeuds;Arbre/Usines;Configuration;Environnement;Interface;../../Commun/Externe/tinyxml/include;%(AdditionalIncludeDirectories);Tests</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;INF2990_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>opengl32.lib;jawt.lib;glu32.lib;freetype.lib;glew32.lib;tinyxml_D_x86.lib;assimp_D_x86.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>../../Exe/DLL/$(ProjectName).dll</OutputFile>
+      <AdditionalLibraryDirectories>$(JAVA_HOME)/lib;../../Commun/Externe/xerces-c/lib;../../Commun/Externe/FreeType/lib;../../Commun/Externe/GLEW/lib;../../Commun/Externe/tinyxml/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Command>C:\Users\Julien\Documents\Julien\Poly\E2011-INF2990\Cadriciel\Sources\Java\LancerInterfaceGraphiqueTests.bat</Command>
+    </PostBuildEvent>
+    <PostBuildEvent>
+      <Message>Tests unitaires</Message>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\Commun\Externe\GLEW\include;..\..\Commun\Externe\FreeImage\include;$(JAVA_HOME)/include;$(JAVA_HOME)/include/win32;../../Commun/Externe/JAWT_info/include;../../Commun/Utilitaire;../../Commun/Utilitaire/Vue;../../Commun/Chargeur3ds/Chargeur3ds/Sources;Application;Arbre;Arbre/Noeuds;Arbre/Usines;Arbre/Modeles;Arbre/GestionListeAffichages;Configuration;Environnement;Interface;../../Commun/Externe/tinyxml/include;../../Commun/Externe/assimp/include;../../Commun/Externe/FMOD/include;../../Commun/Externe/cppunit/include;%(AdditionalIncludeDirectories);Tests;Mode Jeu</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;INF2990_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>opengl32.lib;fmodex64_vc.lib;jawt.lib;glu32.lib;freetype246_D_x64.lib;glew32s.lib;tinyxml_D_x64.lib;assimp_D_x64.lib;cppunit_D_x64.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>../../Exe/DLL/$(ProjectName).dll</OutputFile>
+      <AdditionalLibraryDirectories>../../Commun/Externe/FMOD/lib;$(JAVA_HOME)/lib;../../Commun/Externe/xerces-c/lib;../../Commun/Externe/FreeType/lib;../../Commun/Externe/GLEW/lib;../../Commun/Externe/tinyxml/lib;../../Commun/Externe/assimp/lib;../../Commun/Externe/cppunit/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <TargetMachine>MachineX64</TargetMachine>
+      <AdditionalOptions>/ignore:4099 %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+    <PostBuildEvent>
+      <Command>$(SolutionDir)..\Java\LancerInterfaceGraphiqueTests.bat
+</Command>
+    </PostBuildEvent>
+    <PostBuildEvent>
+      <Message>Tests unitaires</Message>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\Commun\Externe\FreeImage\include;$(JAVA_HOME)/include;$(JAVA_HOME)/include/win32;../../Commun/Externe/JAWT_info/include;../../Commun/Utilitaire;../../Commun/Utilitaire/Vue;../../Commun/Chargeur3ds/Chargeur3ds/Sources;Application;Arbre;Arbre/Noeuds;Arbre/Usines;Configuration;Environnement;Interface;../../Commun/Externe/tinyxml/include;%(AdditionalIncludeDirectories);Tests</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;INF2990_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>opengl32.lib;jawt.lib;glu32.lib;freetype.lib;glew32.lib;tinyxml_x86.lib;assimp_R_x86.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>../Java/InterfaceGraphique/DLL/$(ProjectName).dll</OutputFile>
+      <AdditionalLibraryDirectories>$(JAVA_HOME)/lib;../../Commun/Externe/xerces-c/lib;../../Commun/Externe/FreeType/lib;../../Commun/Externe/GLEW/lib;../../Commun/Externe/tinyxml/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Command>C:\Users\Julien\Documents\Julien\Poly\E2011-INF2990\Cadriciel\Sources\Java\LancerInterfaceGraphiqueTests.bat</Command>
+    </PostBuildEvent>
+    <PostBuildEvent>
+      <Message>Tests unitaires</Message>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\Commun\Externe\FMOD\include;..\..\Commun\Externe\GLEW\include;..\..\Commun\Externe\FreeImage\include;$(JAVA_HOME)/include;$(JAVA_HOME)/include/win32;../../Commun/Externe/JAWT_info/include;../../Commun/Utilitaire;../../Commun/Utilitaire/Vue;../../Commun/Chargeur3ds/Chargeur3ds/Sources;Application;Arbre;Arbre/Noeuds;Arbre/Usines;Arbre/Modeles;Arbre/GestionListeAffichages;Configuration;Environnement;Interface;../../Commun/Externe/tinyxml/include;../../Commun/Externe/assimp/include;../../Commun/Externe/cppunit/include;%(AdditionalIncludeDirectories);Tests</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;INF2990_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>opengl32.lib;jawt.lib;glu32.lib;freetype246_R_x64.lib;glew32s.lib;tinyxml_R_x64.lib;assimp_R_x64.lib;cppunit_R_x64.lib;fmodex64_vc.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>../Java/InterfaceGraphique/DLL/$(ProjectName).dll</OutputFile>
+      <AdditionalLibraryDirectories>../../Commun/Externe/FMOD/lib;$(JAVA_HOME)/lib;../../Commun/Externe/xerces-c/lib;../../Commun/Externe/FreeType/lib;../../Commun/Externe/GLEW/lib;../../Commun/Externe/tinyxml/lib;../../Commun/Externe/assimp/lib;../../Commun/Externe/cppunit/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Command>$(SolutionDir)..\Java\LancerInterfaceGraphiqueTests.bat</Command>
+    </PostBuildEvent>
+    <PostBuildEvent>
+      <Message>Tests unitaires</Message>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Application\FacadeModele.cpp" />
+    <ClCompile Include="Application\GestionBalle.cpp" />
+    <ClCompile Include="Application\GestionJoueur.cpp" />
+    <ClCompile Include="Application\HUD.cpp" />
+    <ClCompile Include="Application\Sound.cpp" />
+    <ClCompile Include="Arbre\GestionListeAffichages\GestionListeAffichages.cpp" />
+    <ClCompile Include="Arbre\Modeles\Modele3D.cpp" />
+    <ClCompile Include="Arbre\Noeuds\NoeudAbstrait.cpp" />
+    <ClCompile Include="Arbre\Noeuds\NoeudAraignee.cpp" />
+    <ClCompile Include="Arbre\Noeuds\NoeudBalle.cpp" />
+    <ClCompile Include="Arbre\Noeuds\NoeudBaton.cpp" />
+    <ClCompile Include="Arbre\Noeuds\NoeudBonus.cpp" />
+    <ClCompile Include="Arbre\Noeuds\NoeudBordure.cpp" />
+    <ClCompile Include="Arbre\Noeuds\NoeudComposite.cpp" />
+    <ClCompile Include="Arbre\Noeuds\NoeudConeCube.cpp" />
+    <ClCompile Include="Arbre\Noeuds\NoeudContour.cpp" />
+    <ClCompile Include="Arbre\Noeuds\NoeudEau.cpp" />
+    <ClCompile Include="Arbre\Noeuds\NoeudFleche.cpp" />
+    <ClCompile Include="Arbre\Noeuds\NoeudPortal.cpp" />
+    <ClCompile Include="Arbre\Noeuds\NoeudSable.cpp" />
+    <ClCompile Include="Arbre\Noeuds\NoeudTerrain.cpp" />
+    <ClCompile Include="Arbre\Noeuds\NoeudTrou.cpp" />
+    <ClCompile Include="Configuration\VisiteurXML.cpp" />
+    <ClCompile Include="Environnement\UtilitaireINF2990.cpp" />
+    <ClCompile Include="Interface\FacadeJNI.cpp" />
+    <ClCompile Include="Configuration\ConfigScene.cpp" />
+    <ClCompile Include="Arbre\ArbreRendu.cpp" />
+    <ClCompile Include="Arbre\ArbreRenduINF2990.cpp" />
+    <ClCompile Include="Mode Jeu\Jeu.cpp" />
+    <ClCompile Include="Mode Jeu\Joueur.cpp" />
+    <ClCompile Include="Tests\ArbreRenduTest.cpp" />
+    <ClCompile Include="Tests\BancTests.cpp" />
+    <ClCompile Include="Tests\ConfigSceneTest.cpp" />
+    <ClCompile Include="Tests\FacadeModeleTest.cpp" />
+    <ClCompile Include="Tests\NoeudAbstraitTest.cpp" />
+    <ClCompile Include="Tests\NoeudCompositeTest.cpp" />
+    <ClCompile Include="Tests\ProjectionOrthoTest.cpp" />
+    <ClCompile Include="Tests\UtilitaireTest.cpp" />
+    <ClCompile Include="Tests\VisiteurXMLTest.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Application\FacadeModele.h" />
+    <ClInclude Include="Application\GestionBalle.h" />
+    <ClInclude Include="Application\GestionJoueur.h" />
+    <ClInclude Include="Application\HUD.h" />
+    <ClInclude Include="Application\Sound.h" />
+    <ClInclude Include="Arbre\GestionListeAffichages\GestionListeAffichages.h" />
+    <ClInclude Include="Arbre\Modeles\Modele3D.h" />
+    <ClInclude Include="Arbre\Noeuds\NoeudAbstrait.h" />
+    <ClInclude Include="Arbre\Noeuds\NoeudAraignee.h" />
+    <ClInclude Include="Arbre\Noeuds\NoeudBalle.h" />
+    <ClInclude Include="Arbre\Noeuds\NoeudBaton.h" />
+    <ClInclude Include="Arbre\Noeuds\NoeudBonus.h" />
+    <ClInclude Include="Arbre\Noeuds\NoeudBordure.h" />
+    <ClInclude Include="Arbre\Noeuds\NoeudComposite.h" />
+    <ClInclude Include="Arbre\Noeuds\NoeudConeCube.h" />
+    <ClInclude Include="Arbre\Noeuds\NoeudContour.h" />
+    <ClInclude Include="Arbre\Noeuds\NoeudEau.h" />
+    <ClInclude Include="Arbre\Noeuds\NoeudFleche.h" />
+    <ClInclude Include="Arbre\Noeuds\NoeudPortal.h" />
+    <ClInclude Include="Arbre\Noeuds\NoeudSable.h" />
+    <ClInclude Include="Arbre\Noeuds\NoeudTerrain.h" />
+    <ClInclude Include="Arbre\Noeuds\NoeudTrou.h" />
+    <ClInclude Include="Arbre\Usines\UsineNoeud.h" />
+    <ClInclude Include="Arbre\Usines\UsineNoeudAraignee.h" />
+    <ClInclude Include="Arbre\Usines\UsineNoeudBalle.h" />
+    <ClInclude Include="Arbre\Usines\UsineNoeudBaton.h" />
+    <ClInclude Include="Arbre\Usines\UsineNoeudBonus.h" />
+    <ClInclude Include="Arbre\Usines\UsineNoeudBordure.h" />
+    <ClInclude Include="Arbre\Usines\UsineNoeudConeCube.h" />
+    <ClInclude Include="Arbre\Usines\UsineNoeudContour.h" />
+    <ClInclude Include="Arbre\Usines\UsineNoeudEau.h" />
+    <ClInclude Include="Arbre\Usines\UsineNoeudFleche.h" />
+    <ClInclude Include="Arbre\Usines\UsineNoeudSable.h" />
+    <ClInclude Include="Arbre\Usines\UsineNoeudTerrain.h" />
+    <ClInclude Include="Arbre\Usines\UsineNoeudTrou.h" />
+    <ClInclude Include="Configuration\VisiteurXML.h" />
+    <ClInclude Include="Environnement\UtilitaireINF2990.h" />
+    <ClInclude Include="Interface\FacadeJNI.h" />
+    <ClInclude Include="Configuration\ConfigScene.h" />
+    <ClInclude Include="Arbre\ArbreRendu.h" />
+    <ClInclude Include="Arbre\ArbreRenduINF2990.h" />
+    <ClInclude Include="Mode Jeu\Jeu.h" />
+    <ClInclude Include="Mode Jeu\Joueur.h" />
+    <ClInclude Include="Tests\ArbreRenduTest.h" />
+    <ClInclude Include="Tests\BancTests.h" />
+    <ClInclude Include="Tests\ConfigSceneTest.h" />
+    <ClInclude Include="Tests\FacadeModeleTest.h" />
+    <ClInclude Include="Tests\NoeudAbstraitTest.h" />
+    <ClInclude Include="Tests\NoeudCompositeTest.h" />
+    <ClInclude Include="Tests\ProjectionOrthoTest.h" />
+    <ClInclude Include="Tests\UtilitaireTest.h" />
+    <ClInclude Include="Tests\VisiteurXMLTest.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Commun\Utilitaire\Utilitaire.vcxproj">
+      <Project>{bb8c9c8a-3b65-4599-b4fe-ca965ee76d2a}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
