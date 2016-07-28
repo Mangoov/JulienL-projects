@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="674.0" prefWidth="790.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="codingDead.codingDeadController">
+   <children>
+      <TextField fx:id="zombieCount" layoutX="94.0" layoutY="40.0" prefHeight="31.0" prefWidth="38.0" />
+      <Text layoutX="14.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The CodingDead" wrappingWidth="228.6904296875">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Text>
+      <Text layoutX="14.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Zombies" wrappingWidth="79.6904296875">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="14.0" layoutY="111.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hunter" wrappingWidth="64.6904296875">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <TextField fx:id="hunterCount" layoutX="94.0" layoutY="89.0" prefHeight="31.0" prefWidth="38.0" />
+      <TextField fx:id="victimCount" layoutX="94.0" layoutY="141.0" prefHeight="31.0" prefWidth="38.0" />
+      <Text layoutX="14.0" layoutY="163.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Victim" wrappingWidth="64.6904296875">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Button layoutX="46.0" layoutY="259.0" mnemonicParsing="false" onAction="#startCodingDead" text="Start" />
+      <Pane fx:id="simulationMap" layoutX="163.0" layoutY="37.0" prefHeight="600.0" prefWidth="600.0" />
+      <Button layoutX="45.0" layoutY="614.0" mnemonicParsing="false" onAction="#clearMap" text="Clear" />
+      <Text layoutX="10.0" layoutY="211.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Map Size" wrappingWidth="72.6904296875">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <TextField fx:id="mapSize" layoutX="93.0" layoutY="189.0" prefHeight="31.0" prefWidth="38.0" />
+   </children>
+</AnchorPane>
